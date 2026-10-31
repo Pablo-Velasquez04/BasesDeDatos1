@@ -1,0 +1,24 @@
+$kind: http-request
+name: POST /productos (crear)
+url: http://localhost:3000/api/productos
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Nombre": "Producto {{$timestamp}}",
+      "Descripcion": "Producto de prueba",
+      "Precio": 150.5,
+      "Existencia_Actual": 100,
+      "Categoria_Codigo": 1,
+      "Marca_Producto_Codigo": 1
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('HTTP 201', () => pm.response.to.have.status(201));
+      pm.collectionVariables.set('nuevoId', pm.response.json().Codigo_Producto);
+    language: text/javascript
+order: 3000

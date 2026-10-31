@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="880AB945-24AF-E316-56C0-EA330900A58A" name="Cliente">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 03:59:14 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Codigo_Cliente" id="579BEB79-83AB-0E18-F37A-8A8EB6C6E0A8">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:06:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombres" id="4C8EFFF4-3164-435F-7582-EFF5CCF60EE5">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:06:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellidos" id="5D8D1D77-CEF1-9A27-AC01-DEF15D0439DD">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:06:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numero_Identificacion" id="8BBED0C4-93FE-7576-C9B9-8FE6E692672C">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:06:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Correo" id="29BE58BA-417F-181E-93E6-C39F0F5449DD">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:06:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="6D397F9C-CB12-6D44-2004-70A4023776C6">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:06:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_Municipio" id="445A459A-39E4-67D4-8399-433D17BEB0E0">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:06:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_Tipo_Id" id="7E464A86-C71B-8DDE-A590-1AE6DD53E5BB">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:06:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_Identificacion_Id_Tipo_Id" id="E26C6912-7125-A10E-F1BA-A5E2D38BB3A4">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:51:48 UTC</createdTime>
+<generatorID>2ADF618D-9B0B-92B7-596A-454E6D9915D5</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="99218A17-5CE4-67B7-1862-42FEA39D9311" referredColumn="FEAC5E16-38FC-D0A6-7157-F19B76D809E7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BBEACB1D-7ABF-3322-6A19-DDC1F12B260C" name="Cliente_PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:06:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="579BEB79-83AB-0E18-F37A-8A8EB6C6E0A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D97880A-AA17-0F5C-771F-4858BF21FA0D" name="CLI_NUMID_TIPO_UN">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:06:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BBED0C4-93FE-7576-C9B9-8FE6E692672C"/>
+<colUsage columnID="7E464A86-C71B-8DDE-A590-1AE6DD53E5BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8522A303-E7F9-1A15-ACCC-59A28FC1AF5E" name="Cliente_Correo_UN">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:06:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29BE58BA-417F-181E-93E6-C39F0F5449DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC6E8783-0D31-A7B7-81B4-B2F521591585" name="Cliente_Tipo_Identificacion_FK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:51:48 UTC</createdTime>
+<generatorID>D4369CF1-72F9-7300-6276-45AE38849056</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E26C6912-7125-A10E-F1BA-A5E2D38BB3A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

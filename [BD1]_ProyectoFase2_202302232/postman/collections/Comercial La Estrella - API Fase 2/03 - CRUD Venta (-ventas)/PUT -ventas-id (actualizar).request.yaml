@@ -1,0 +1,21 @@
+$kind: http-request
+name: PUT /ventas/:id (actualizar)
+url: http://localhost:3000/api/ventas/{{nuevoId}}
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Fecha": "2026-10-14",
+      "Tienda_Id_Tienda": 1,
+      "Empleado_Codigo_Empleado": 1,
+      "Cliente_Codigo_Cliente": 1,
+      "Estado_Venta_Id_Estado": 1
+    }
+scripts:
+  - type: afterResponse
+    code: pm.test('HTTP 200', () => pm.response.to.have.status(200));
+    language: text/javascript
+order: 4000

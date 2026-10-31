@@ -1,0 +1,4 @@
+$kind: collection
+name: 03 - CRUD Detalle_Venta (/detalles-venta)
+description: "Usa la venta de prueba creada en la carpeta 01 (variable ventaId): ejecuta esa carpeta primero."
+order: 19000

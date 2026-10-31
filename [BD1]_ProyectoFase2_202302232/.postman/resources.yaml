@@ -1,0 +1,15 @@
+# Use this workspace to collaborate
+workspace:
+  id: 9ce67839-f1af-4fe6-8eb0-2d1d822c93db
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/Comercial La Estrella - API Fase 2: df909914-f4d1-418f-83d7-f6ebdbc96ccd
+
+# All resources in the `postman/` folder are automatically registered in Local View.
+# Point to additional files outside the `postman/` folder to register them individually. Example:
+#localResources:
+#  collections:
+#    - ../tests/E2E Test Collection/

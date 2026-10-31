@@ -1,0 +1,10 @@
+$kind: http-request
+url: http://localhost:3000/api/productos/{{productoId}}
+method: GET
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('HTTP 200', () => pm.response.to.have.status(200));
+      pm.collectionVariables.set('stockAntes', pm.response.json().Existencia_Actual);
+    language: text/javascript
+order: 2000

@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="078869B1-AAD4-2D67-3C4C-F66E57705EA8" name="Tienda">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>84250CB6-E8DB-E016-AA5E-42F830023894</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id Tienda" id="08581126-F4EA-E316-1E42-8FCEF69B30EE">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>BDEA3557-E130-C6FD-0595-2E09BE8C2850</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="107BE9C8-629D-8322-B4BB-9410D436F257">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>6F924164-05C4-7DA7-16F0-038F267E76C5</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion" id="66C53042-C389-2637-7578-1380DA9F0C36">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>025F3BF7-E831-2C2F-3FC2-073644E1147E</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefono" id="8F331E15-610C-8FA7-4FD9-95FE49675F2D">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>5204797D-9607-F033-00E6-B810B3AB53C1</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Municipio" id="2E2A6049-7992-5FF0-B35C-225C6DFC8856">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>3391C586-C124-2B36-EF74-3D722D5EDBEC</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Tipo_Tienda" id="D4D88F99-5D98-37DB-234A-5B2DCC44BA3E">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>69E41B67-FB60-349C-9C6C-EE51903E1D78</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Municipio1" id="FA9F8A16-2342-0D23-DB77-FD1162950BB4">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:33:15 UTC</createdTime>
+<generatorID>63220DA9-D333-864C-170C-B9BE0CBC37EB</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>AC688D08-8E4B-DE6F-A6F9-B6F99392A973</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Tipo_Tienda1" id="58C96193-40AF-55FE-728A-158630088323">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:38:37 UTC</createdTime>
+<generatorID>A85C886C-BFC2-6050-86EE-1D1B6D8B3070</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>955D781B-3E82-A626-2A86-63CD767F89A7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D17BFADE-4539-311E-9AA0-B62ACB844329" name="Tienda PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>1C42981B-AA04-385A-657D-911B9B6E2B02</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>08581126-F4EA-E316-1E42-8FCEF69B30EE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F5F22D51-8007-9914-0C33-9122F1C1DE59" name="Categoria_Producto">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:07:06 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Codigo_Categoria" id="DCE7A782-230F-C560-D704-820F0DE019C7">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:08:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="D056A10C-A3B7-69F5-1C67-DDECA33A078B">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:08:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5FCD203D-5319-85C1-9A7D-A86B7DB47116" name="Categoria_Producto_PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:08:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCE7A782-230F-C560-D704-820F0DE019C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50652299-39D9-74E8-48D4-CF2BC8148BED" name="Categoria_Producto_Nombre_UN">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:08:30 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D056A10C-A3B7-69F5-1C67-DDECA33A078B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

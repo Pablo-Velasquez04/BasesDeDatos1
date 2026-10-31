@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3CEEEE32-095A-A3A6-87D1-4DECC1FA35C8" name="Pais">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-17 23:03:36 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Codigo_Pais" id="6994F7AB-9619-F762-0707-1C0E0CC0DBEB">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-17 23:37:47 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="8DC37199-32B9-ADE8-FC1A-E148FE9C8C87">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-17 23:37:47 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C70A09B8-DD94-2BEF-C7BF-07A91FDAA8A4" name="Pais_PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-17 23:37:47 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6994F7AB-9619-F762-0707-1C0E0CC0DBEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="699397F5-A44D-265B-63AD-077A7538894B" name="Pais_Nombre_UN">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-17 23:37:47 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DC37199-32B9-ADE8-FC1A-E148FE9C8C87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

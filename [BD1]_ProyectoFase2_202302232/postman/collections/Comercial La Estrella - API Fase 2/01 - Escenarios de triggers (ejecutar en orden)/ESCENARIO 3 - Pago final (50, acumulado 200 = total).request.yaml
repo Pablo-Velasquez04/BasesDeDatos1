@@ -1,0 +1,18 @@
+$kind: http-request
+url: http://localhost:3000/api/pagos
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Monto_Pagado": 50,
+      "Venta_Numero_Venta": {{ventaId}},
+      "Metodo_Pago_Id_Metodo": 1
+    }
+scripts:
+  - type: afterResponse
+    code: pm.test('HTTP 201 (la API solo confirma el pago)', () => pm.response.to.have.status(201));
+    language: text/javascript
+order: 11000

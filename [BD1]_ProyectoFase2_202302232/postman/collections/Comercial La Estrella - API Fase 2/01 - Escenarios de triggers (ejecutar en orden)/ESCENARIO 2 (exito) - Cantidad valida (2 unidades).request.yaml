@@ -1,0 +1,20 @@
+$kind: http-request
+description: "Subtotal no se envia: el SQL lo calcula (2 x 100 = 200)."
+url: http://localhost:3000/api/detalles-venta
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Cantidad": 2,
+      "Precio_Unitario": 100,
+      "Venta_Numero_Venta": {{ventaId}},
+      "Producto_Codigo_Producto": {{productoId}}
+    }
+scripts:
+  - type: afterResponse
+    code: pm.test('HTTP 201', () => pm.response.to.have.status(201));
+    language: text/javascript
+order: 5000

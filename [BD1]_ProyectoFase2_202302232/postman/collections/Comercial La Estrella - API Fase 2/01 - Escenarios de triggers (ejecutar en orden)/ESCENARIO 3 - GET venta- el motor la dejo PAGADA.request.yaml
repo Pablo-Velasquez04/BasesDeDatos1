@@ -1,0 +1,11 @@
+$kind: http-request
+name: "ESCENARIO 3 - GET venta: el motor la dejo PAGADA"
+url: http://localhost:3000/api/ventas/{{ventaId}}
+method: GET
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('HTTP 200', () => pm.response.to.have.status(200));
+      pm.test('El estado de la venta es "PAGADA"', () => pm.expect(pm.response.json().Estado).to.eql('PAGADA'));
+    language: text/javascript
+order: 12000

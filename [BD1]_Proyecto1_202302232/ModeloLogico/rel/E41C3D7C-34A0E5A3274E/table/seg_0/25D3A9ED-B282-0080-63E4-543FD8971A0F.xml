@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="25D3A9ED-B282-0080-63E4-543FD8971A0F" name="Detalle_Venta">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:34:51 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Detalle" id="048F39C5-C99E-EA97-26F5-7C4F4EB837F4">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:40:50 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numero_Venta" id="DD03C84A-A002-6B15-DF2D-4B092D496FB9">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:40:50 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Codigo_Producto" id="5A39112B-9213-C134-1D76-89E5A739D3FD">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:40:50 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cantidad" id="D609C07E-9F09-E041-89EC-58BA8A6E4C64">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:40:50 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>50</dataTypePrecision>
+<ownDataTypeParameters>,50,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Precio_Unitario" id="590EA180-4261-1F70-A939-E4DED75FD83D">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:40:50 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Subtotal" id="D336B164-475D-92B2-BBE9-B8984AB2D952">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:40:50 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Venta_Numero_Venta" id="BD0B35EF-B2EB-19D3-F31F-CDDD8A51FD63">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:51:48 UTC</createdTime>
+<generatorID>BCFD20B9-7143-11C1-D7E5-776372DD31F8</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="796A8AF5-1E77-272F-87D9-27AA525792DB" referredColumn="CF023536-E135-4F29-9EB3-6ED2D28F35C7"/>
+</associations>
+</Column>
+<Column name="Producto_Codigo_Producto" id="6E9B7EA8-ADBB-8FD0-D062-D8DBBD5C12AE">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:51:48 UTC</createdTime>
+<generatorID>45A5ECED-15BA-C8FC-3FD7-E9F942898111</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A73EF81-BA70-8BB1-923D-8E5A95F517EC" referredColumn="895AD575-278A-6D4D-26FC-CC217F389DF3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EBA71D99-B81F-CBF3-ECD4-598D983D674F" name="Detalle_Venta_PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:40:50 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="048F39C5-C99E-EA97-26F5-7C4F4EB837F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8EB5A42-FA0B-6994-BBE6-36E0E114A4B9" name="DV_CODPROD_UN">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:40:50 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A39112B-9213-C134-1D76-89E5A739D3FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D8F230D-5DE0-D74A-CC2C-16D06084F34E" name="Detalle_Venta_Venta_FK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:51:48 UTC</createdTime>
+<generatorID>8B9D2F07-FF9C-AF46-0247-910F8E06B1C1</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD0B35EF-B2EB-19D3-F31F-CDDD8A51FD63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18749E13-9DA0-48E8-8F43-472DC4A3488C" name="Detalle_Venta_Producto_FK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:51:48 UTC</createdTime>
+<generatorID>FBB83E19-818E-B17F-0735-AE64CF3634AC</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E9B7EA8-ADBB-8FD0-D062-D8DBBD5C12AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Detalle_Venta_CK_Cantidad" directorySegmentName="seg_0" id="9AB61B1E-3522-BF12-2487-0485933B6275">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:40:50 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<rule><![CDATA[Cantidad > 0]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="DV_CK_PRECIO" directorySegmentName="seg_0" id="8D918CA6-3972-68AF-4E5B-220E32611A75">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:40:50 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<rule><![CDATA[Precio_Unitario > 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

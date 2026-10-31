@@ -1,0 +1,9 @@
+$kind: collection
+description: |-
+  Coleccion de pruebas: salud, escenarios de triggers, reportes (vistas) y CRUD de las 17 tablas.
+  Ejecutar con el Runner en el orden de las carpetas (00, 01, 02, 03...). Requiere la API en http://localhost:3000 (las URLs ya incluyen /api) y los datos cargados con scripts/cargarExcel.js.
+variables:
+  productoId: "1"
+  ventaId: ""
+  nuevoId: ""
+  stockAntes: ""

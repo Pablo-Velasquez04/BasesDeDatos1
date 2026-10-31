@@ -1,0 +1,24 @@
+SELECT
+    v.numero_venta AS venta,                           -- Muestra el identificador o número correlativo de la factura.
+    SUM(DISTINCT dv.subtotal) AS total_venta,          -- Calcula el costo total de los productos comprados en esa venta.
+    NVL(SUM(dp.monto_pagado), 0) AS total_pagado,      -- Suma el dinero abonado. Si no hay abonos, muestra 0 gracias a NVL.
+    SUM(DISTINCT dv.subtotal) - NVL(SUM(dp.monto_pagado), 0) AS diferencia_pendiente -- Resta el total de la venta menos lo pagado.
+
+FROM
+    venta v                                            -- Tabla principal de registros de transacciones.
+
+INNER JOIN estado_venta ev
+    ON v.estado_venta_id_estado = ev.id_estado         -- Conecta la venta con su catálogo de estados.
+INNER JOIN detalle_venta dv
+    ON v.numero_venta = dv.venta_numero_venta          -- Conecta la venta con sus líneas de productos para calcular el precio total.
+LEFT JOIN detalle_pago dp
+    ON v.numero_venta = dp.venta_numero_venta          -- Usa LEFT JOIN para incluir ventas aunque aún no tengan ningún pago registrado.
+
+WHERE
+    UPPER(ev.tipo_estado) = 'REGISTRADA'               -- Filtra estrictamente para mostrar solo las ventas con estado 'REGISTRADA'.
+
+GROUP BY
+    v.numero_venta                                     -- Agrupa los cálculos matemáticos de manera individual por cada venta.
+
+ORDER BY
+    diferencia_pendiente DESC;                         -- Ordena la lista mostrando primero las deudas más grandes.

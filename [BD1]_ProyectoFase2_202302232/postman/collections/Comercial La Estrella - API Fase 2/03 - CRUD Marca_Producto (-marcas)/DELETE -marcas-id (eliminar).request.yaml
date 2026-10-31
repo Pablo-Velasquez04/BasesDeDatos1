@@ -1,0 +1,9 @@
+$kind: http-request
+name: DELETE /marcas/:id (eliminar)
+url: http://localhost:3000/api/marcas/{{nuevoId}}
+method: DELETE
+scripts:
+  - type: afterResponse
+    code: pm.test('HTTP 200', () => pm.response.to.have.status(200));
+    language: text/javascript
+order: 5000

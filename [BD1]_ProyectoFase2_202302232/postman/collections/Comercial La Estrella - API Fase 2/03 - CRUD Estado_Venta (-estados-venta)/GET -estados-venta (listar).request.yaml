@@ -1,0 +1,11 @@
+$kind: http-request
+name: GET /estados-venta (listar)
+url: http://localhost:3000/api/estados-venta
+method: GET
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('HTTP 200', () => pm.response.to.have.status(200));
+      pm.test('Devuelve una lista', () => pm.expect(pm.response.json()).to.be.an('array'));
+    language: text/javascript
+order: 1000

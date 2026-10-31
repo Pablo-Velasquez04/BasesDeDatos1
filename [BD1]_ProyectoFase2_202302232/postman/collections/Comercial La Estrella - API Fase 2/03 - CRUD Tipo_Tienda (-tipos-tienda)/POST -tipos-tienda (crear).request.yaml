@@ -1,0 +1,19 @@
+$kind: http-request
+name: POST /tipos-tienda (crear)
+url: http://localhost:3000/api/tipos-tienda
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Nombre_Tipo": "Tipo tienda {{$timestamp}}"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('HTTP 201', () => pm.response.to.have.status(201));
+      pm.collectionVariables.set('nuevoId', pm.response.json().Id_Tipo_Tienda);
+    language: text/javascript
+order: 3000

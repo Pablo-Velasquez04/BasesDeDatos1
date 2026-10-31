@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DC235D85-D72A-CD21-FDD7-D0C4F1FAD60D" name="Cargo_Empleado">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>73C5A7BB-2B8A-03F5-AE55-5625AF946D87</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Cargo" id="779C5890-4AB2-96DB-6D16-D1FEF1402A44">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>9897B394-A950-DBF0-1A34-FE3BA41A7BD5</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre_Cargo" id="42B6F1D7-2109-7450-C075-36A441640CD3">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>2918A3E0-501F-4EC0-B5F0-0F6FDFBCC9ED</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="459264E4-500F-D523-94FB-A3064F546F8D" name="Cargo Empleado PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>6CAC8252-0311-F9BF-4A0E-D4A61B1B1BBD</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>779C5890-4AB2-96DB-6D16-D1FEF1402A44</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="A63A7B36-90BA-8C1A-55EF-7D83470279A0" name="Cargo Empleado  UN">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>1A217A7C-2EE2-2AD1-53D4-2FFCD4FB6042</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>42B6F1D7-2109-7450-C075-36A441640CD3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

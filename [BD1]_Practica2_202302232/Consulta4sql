@@ -1,0 +1,19 @@
+SELECT 
+    e.nombre_completo AS "ESTUDIANTE",
+    inst.nombre AS "INSTITUTO",
+    ce.nombre AS "CONTACTO EMPRESARIAL",
+    ec.nombre AS "ESTADO COLOCACIÓN"
+FROM COLOCACION c
+INNER JOIN ESTUDIANTE e 
+    ON c.estudiante_id_estudiante = e.id_estudiante
+INNER JOIN CATEDRATICO_SUPERVISOR cs 
+    ON c.catedratico_supervisor_id_catedratico = cs.id_catedratico
+INNER JOIN INSTITUTO inst 
+    ON cs.instituto_id_instituto = inst.id_instituto
+INNER JOIN PLAZA p 
+    ON c.plaza_id_plaza = p.id_plaza
+INNER JOIN CONTACTO_EMPRESARIAL ce 
+    ON p.contacto_empresarial_id_contacto = ce.id_contacto
+INNER JOIN ESTADO_COLOCACION ec 
+    ON c.estado = ec.id_estado
+WHERE e.es_repitente = 1;

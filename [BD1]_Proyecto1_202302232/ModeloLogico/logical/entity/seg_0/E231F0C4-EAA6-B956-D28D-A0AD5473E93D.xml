@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E231F0C4-EAA6-B956-D28D-A0AD5473E93D" name="Detalle_Pago">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>1851B77F-5737-2D5C-0C03-D98E70F11021</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Pago" id="8F4526A8-1CEC-CC31-4F4A-09BB0FE5BABC">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>3CFDA9E2-CF44-3022-74A2-267804A20CB0</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numero_Venta" id="8DDFBFB6-6AD6-A857-22EA-335291F20F6A">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>7B9A4303-5054-468A-C27C-B602A96071DE</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Metodo" id="88338868-2FC6-00B7-EAAB-9818995AE572">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>D435DC94-39B8-3F4B-2357-41BB3ED72C19</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Monto_Pagado" id="96F0F97A-1E5C-CFFA-82D9-0B50A3F8B730">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>4A7C3EBD-9B52-6C58-2456-62EAA8C09688</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numero_Venta1" id="62E9F632-8623-108A-DD4E-EF635741E72E">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:44:36 UTC</createdTime>
+<generatorID>FD8DEC39-45DE-9532-A7B1-8876A2893AC1</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>FE81DE33-DCDF-C4F8-3CD5-FD6056138352</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Metodo1" id="FDCB2949-F07D-91DC-4FCE-4464B987602B">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:45:09 UTC</createdTime>
+<generatorID>4FA92B3F-D61E-4D92-0DDB-42BB6686E9E6</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E9699270-52DB-7AB4-4F55-3B7061AA138C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3615A730-1074-56AB-7A01-FCD93EFB673C" name="Detalle Pago PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>D5B5E074-8D2A-DA98-F890-C50AB776742A</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8F4526A8-1CEC-CC31-4F4A-09BB0FE5BABC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

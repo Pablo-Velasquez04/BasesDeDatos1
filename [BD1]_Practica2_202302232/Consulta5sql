@@ -1,0 +1,20 @@
+SELECT 
+    e.carne AS "CARNÉ",
+    e.nombre_completo AS "ESTUDIANTE",
+    cs.nombre AS "CATEDRÁTICO SUPERVISOR",
+    ec.nombre AS "ESTADO COLOCACIÓN"
+FROM COLOCACION c
+INNER JOIN ESTUDIANTE e 
+    ON c.estudiante_id_estudiante = e.id_estudiante
+INNER JOIN CATEDRATICO_SUPERVISOR cs 
+    ON c.catedratico_supervisor_id_catedratico = cs.id_catedratico
+INNER JOIN ESTADO_COLOCACION ec 
+    ON c.estado = ec.id_estado
+WHERE UPPER(ec.nombre) = 'ACTIVA'
+  AND NOT EXISTS (
+      SELECT 1 
+      FROM BITACORA b
+      WHERE b.colocacion_id_colocacion = c.id_colocacion
+        AND b.fecha BETWEEN TO_DATE('2026-08-01', 'YYYY-MM-DD') 
+                        AND TO_DATE('2026-08-31', 'YYYY-MM-DD')
+  );

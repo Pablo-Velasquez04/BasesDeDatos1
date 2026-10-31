@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="699B842D-6B97-BC1B-4765-A253536C30F9" name="Metodo_Pago">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:40:56 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Metodo" id="26369C44-F655-CD0E-2387-B3EFC45BB28D">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:41:47 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_Metodo" id="742678D1-3D53-38F6-35BC-0E0034CA8075">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:41:47 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6BBDD648-F2E9-2441-15BD-5F9C1DDAD042" name="Metodo_Pago_PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:41:47 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26369C44-F655-CD0E-2387-B3EFC45BB28D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C78CEEF5-51B0-5C5B-9542-529D65DB58A2" name="Metodo_Pago_Nombre_Metodo_UN">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:41:47 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="742678D1-3D53-38F6-35BC-0E0034CA8075"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+$kind: http-request
+name: PUT /departamentos/:id (actualizar)
+url: http://localhost:3000/api/departamentos/{{nuevoId}}
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Nombre": "Depto editado {{$timestamp}}",
+      "Pais_Codigo_Pais": 1
+    }
+scripts:
+  - type: afterResponse
+    code: pm.test('HTTP 200', () => pm.response.to.have.status(200));
+    language: text/javascript
+order: 4000

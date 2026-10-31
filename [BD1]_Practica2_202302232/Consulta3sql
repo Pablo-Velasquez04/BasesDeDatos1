@@ -1,0 +1,18 @@
+SELECT 
+    ce.nombre AS "CONTACTO EMPRESARIAL",
+    emp.nombre AS "EMPRESA",
+    SUM(b.horas_trabajadas) AS "TOTAL HORAS VALIDADAS"
+FROM BITACORA b
+INNER JOIN COLOCACION c 
+    ON b.colocacion_id_colocacion = c.id_colocacion
+INNER JOIN PLAZA p 
+    ON c.plaza_id_plaza = p.id_plaza
+INNER JOIN CONTACTO_EMPRESARIAL ce 
+    ON p.contacto_empresarial_id_contacto = ce.id_contacto
+INNER JOIN EMPRESA emp 
+    ON ce.empresa_id_empresa = emp.id_empresa
+WHERE b.fecha BETWEEN TO_DATE('2026-07-01', 'YYYY-MM-DD') 
+                  AND TO_DATE('2026-08-31', 'YYYY-MM-DD')
+  AND b.validacion_contacto = 1
+GROUP BY ce.id_contacto, ce.nombre, emp.nombre
+ORDER BY "TOTAL HORAS VALIDADAS" DESC;

@@ -1,0 +1,3 @@
+$kind: collection
+description: Prueban los 2 triggers. Dejan una venta de prueba y 2 unidades menos del producto 1.
+order: 2000

@@ -1,0 +1,25 @@
+$kind: http-request
+name: POST /clientes (crear)
+url: http://localhost:3000/api/clientes
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Nombres": "Cliente",
+      "Apellidos": "Prueba",
+      "Numero_Identificacion": "{{$timestamp}}",
+      "Correo": "cliente{{$timestamp}}@correo.com",
+      "Direccion": "Zona 10",
+      "Id_Municipio": 1,
+      "Tipo_Identificacion_Id_Tipo_Id": 1
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('HTTP 201', () => pm.response.to.have.status(201));
+      pm.collectionVariables.set('nuevoId', pm.response.json().Codigo_Cliente);
+    language: text/javascript
+order: 3000

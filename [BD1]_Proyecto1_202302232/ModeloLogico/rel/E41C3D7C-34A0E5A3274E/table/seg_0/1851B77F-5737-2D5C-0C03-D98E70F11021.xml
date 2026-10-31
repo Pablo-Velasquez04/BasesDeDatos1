@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1851B77F-5737-2D5C-0C03-D98E70F11021" name="Detalle_Pago">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:41:57 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Pago" id="3CFDA9E2-CF44-3022-74A2-267804A20CB0">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:43:36 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Numero_Venta" id="7B9A4303-5054-468A-C27C-B602A96071DE">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:43:36 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_Metodo" id="D435DC94-39B8-3F4B-2357-41BB3ED72C19">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:43:36 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Monto_Pagado" id="4A7C3EBD-9B52-6C58-2456-62EAA8C09688">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:43:36 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Venta_Numero_Venta" id="73C23570-3CA7-8539-49F6-B35C930D8DE2">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:51:48 UTC</createdTime>
+<generatorID>62E9F632-8623-108A-DD4E-EF635741E72E</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0EDC93D5-1888-CA5E-A257-CE1C76BB9F24" referredColumn="CF023536-E135-4F29-9EB3-6ED2D28F35C7"/>
+</associations>
+</Column>
+<Column name="Metodo_Pago_Id_Metodo" id="DAFDCD75-17F0-DB06-4F74-CE3DB1BED4F5">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:51:48 UTC</createdTime>
+<generatorID>FDCB2949-F07D-91DC-4FCE-4464B987602B</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE75342E-0D48-1C27-A681-55598C8FA9DD" referredColumn="26369C44-F655-CD0E-2387-B3EFC45BB28D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5B5E074-8D2A-DA98-F890-C50AB776742A" name="Detalle_Pago_PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:43:36 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CFDA9E2-CF44-3022-74A2-267804A20CB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E09CEB78-B77B-27F8-70F7-15C9A9C2D517" name="Detalle_Pago_Venta_FK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:51:48 UTC</createdTime>
+<generatorID>FD8DEC39-45DE-9532-A7B1-8876A2893AC1</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73C23570-3CA7-8539-49F6-B35C930D8DE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DAA95AA7-B7AF-95E7-735B-E9C701AFAD04" name="Detalle_Pago_Metodo_Pago_FK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:51:48 UTC</createdTime>
+<generatorID>4FA92B3F-D61E-4D92-0DDB-42BB6686E9E6</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAFDCD75-17F0-DB06-4F74-CE3DB1BED4F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="Detalle_Pago_CK_Monto_Pagado" directorySegmentName="seg_0" id="3A53BF84-B86B-188D-2DDE-F1ADEDB2A102">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:43:36 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<rule><![CDATA[Monto_Pagado > 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

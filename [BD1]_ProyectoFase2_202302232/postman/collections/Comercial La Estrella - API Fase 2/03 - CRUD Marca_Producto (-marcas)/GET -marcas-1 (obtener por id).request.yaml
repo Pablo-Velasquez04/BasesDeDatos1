@@ -1,0 +1,11 @@
+$kind: http-request
+name: GET /marcas/1 (obtener por id)
+url: http://localhost:3000/api/marcas/1
+method: GET
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('HTTP 200', () => pm.response.to.have.status(200));
+      pm.test('Trae Codigo_Marca', () => pm.expect(pm.response.json()).to.have.property('Codigo_Marca'));
+    language: text/javascript
+order: 2000

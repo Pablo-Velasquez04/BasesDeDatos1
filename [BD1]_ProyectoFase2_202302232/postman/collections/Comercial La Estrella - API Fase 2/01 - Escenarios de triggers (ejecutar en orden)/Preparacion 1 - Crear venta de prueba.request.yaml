@@ -1,0 +1,21 @@
+$kind: http-request
+description: "Sin Fecha ni Estado: el SQL pone la fecha de hoy y el estado Registrada."
+url: http://localhost:3000/api/ventas
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Tienda_Id_Tienda": 1,
+      "Empleado_Codigo_Empleado": 1,
+      "Cliente_Codigo_Cliente": 1
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('HTTP 201', () => pm.response.to.have.status(201));
+      pm.collectionVariables.set('ventaId', pm.response.json().Numero_Venta);
+    language: text/javascript
+order: 1000

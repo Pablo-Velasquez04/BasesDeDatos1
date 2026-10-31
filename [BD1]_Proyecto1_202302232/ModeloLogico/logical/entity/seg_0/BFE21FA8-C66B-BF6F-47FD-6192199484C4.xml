@@ -1,0 +1,195 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BFE21FA8-C66B-BF6F-47FD-6192199484C4" name="Venta">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>EAB04F8E-B1F5-3C58-7423-0DA66CD8D9D7</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Numero_Venta" id="FE81DE33-DCDF-C4F8-3CD5-FD6056138352">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>CF023536-E135-4F29-9EB3-6ED2D28F35C7</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha" id="82F0C167-1555-71AF-EF9D-639830528275">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>2FEA87ED-D322-7D63-EBDB-CDD091D73C7E</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Codigo_Cliente" id="175B915F-585B-A90C-0F75-49F4D9993CF7">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>40A57157-5C6F-97F2-5DDA-8F79EEA61A0A</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Tienda" id="4B8E56EF-A0B8-88F3-BB52-8A95816134F0">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>9B2301B6-A05A-374A-4535-A34D4C0AA355</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Codigo_Empleado" id="87AEC939-FDDC-C203-9EBF-19EFCF54D6AE">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>DF2E2342-5518-20E3-0286-311A45947DED</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Estado" id="B5630F9E-BFAE-1F22-E6FC-D75880A59DE6">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>86D70864-6412-B84F-B7A2-F3546ECA0168</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id Tienda" id="E8C0B566-FD59-FE82-6DA4-98EB8453A747">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:41:00 UTC</createdTime>
+<generatorID>0F65539F-6819-E165-31E0-4C6D6C347EB6</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>08581126-F4EA-E316-1E42-8FCEF69B30EE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Codigo_Empleado1" id="A95FC371-5944-3B5C-3C17-AF8545AE0301">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:41:38 UTC</createdTime>
+<generatorID>CDBE32EC-369B-61A6-2062-2C156ED07D25</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>ECFA8183-B788-5B3E-5F51-678AA1B1656D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Codigo_Cliente1" id="B7CF6063-F080-FEA3-71F2-E42EEACC12FE">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:42:25 UTC</createdTime>
+<generatorID>CBE8CEA1-9552-42B8-8317-322F791F6D2F</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3207F277-9ACA-E352-6FA6-66FF0F1CFD88</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Estado1" id="3D4941D3-224F-654F-70E8-ED4B7B7E2537">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:43:57 UTC</createdTime>
+<generatorID>9CD708F7-6457-88BC-AA51-3960DEA75EFE</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>4D64F606-1C36-B11B-4E37-AD363C59116E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="56537676-A439-5251-7F18-65419EFF91B2" name="Venta PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:17:22 UTC</createdTime>
+<generatorID>D3FCF08B-8D46-EB58-AC31-4F82443D825C</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F6CC7239-E411-E1E9-3E0F-BE0892BAEBFA" value="true"/>
+<item key="E41C3D7C-B5D2-AC4F-30AE-34A0E5A3274E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FE81DE33-DCDF-C4F8-3CD5-FD6056138352</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

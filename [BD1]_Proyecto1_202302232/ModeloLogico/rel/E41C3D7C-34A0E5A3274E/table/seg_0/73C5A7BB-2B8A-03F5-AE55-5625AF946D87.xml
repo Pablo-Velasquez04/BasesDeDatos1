@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="73C5A7BB-2B8A-03F5-AE55-5625AF946D87" name="Cargo_Empleado">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 03:01:05 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Cargo" id="9897B394-A950-DBF0-1A34-FE3BA41A7BD5">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 03:02:29 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_Cargo" id="2918A3E0-501F-4EC0-B5F0-0F6FDFBCC9ED">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 03:02:29 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6CAC8252-0311-F9BF-4A0E-D4A61B1B1BBD" name="Cargo_Empleado_PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 03:02:29 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9897B394-A950-DBF0-1A34-FE3BA41A7BD5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A217A7C-2EE2-2AD1-53D4-2FFCD4FB6042" name="Cargo_Empleado_Nombre_Cargo_UN">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 03:02:29 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2918A3E0-501F-4EC0-B5F0-0F6FDFBCC9ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+$kind: http-request
+name: PUT /cargos-empleado/:id (actualizar)
+url: http://localhost:3000/api/cargos-empleado/{{nuevoId}}
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Nombre_Cargo": "Cargo editado {{$timestamp}}"
+    }
+scripts:
+  - type: afterResponse
+    code: pm.test('HTTP 200', () => pm.response.to.have.status(200));
+    language: text/javascript
+order: 4000

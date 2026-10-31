@@ -1,0 +1,29 @@
+SELECT
+    cp.nombre AS categoria,                            -- Muestra el nombre de la categoría del producto.
+    mp.nombre AS marca,                                -- Muestra el nombre de la marca del producto.
+    SUM(dv.cantidad) AS unidades_vendidas,             -- Suma las cantidades para dar el total de piezas vendidas.
+    SUM(dv.subtotal) AS total_facturado                -- Suma los subtotales para obtener el dinero total ingresado.
+
+FROM
+    venta v                                            -- Tabla principal de transacciones de venta.
+
+INNER JOIN detalle_venta dv
+    ON v.numero_venta = dv.venta_numero_venta          -- Conecta cada venta con la lista de productos que contiene.
+INNER JOIN producto p
+    ON dv.producto_codigo_producto = p.codigo_producto -- Conecta cada línea de detalle con el producto específico comprado.
+INNER JOIN categoria_producto cp
+    ON p.categoria_codigo = cp.codigo_categoria        -- Conecta el producto con su tabla de categorías.
+INNER JOIN marca_producto mp
+    ON p.marca_producto_codigo = mp.codigo_marca       -- Conecta el producto con su marca para obtener su nombre.
+INNER JOIN estado_venta ev
+    ON v.estado_venta_id_estado = ev.id_estado         -- Conecta la venta con su estado de validez actual.
+
+WHERE
+    UPPER(ev.tipo_estado) <> 'ANULADA'                 -- Excluye de las métricas todas las ventas canceladas.
+
+GROUP BY
+    cp.nombre,                                         -- Agrupa los cálculos matemáticos por nombre de categoría.
+    mp.nombre                                          -- Agrupa los cálculos matemáticos por nombre de marca.
+
+ORDER BY
+    total_facturado DESC;                              -- Ordena el reporte de mayor a menor según los ingresos generados.

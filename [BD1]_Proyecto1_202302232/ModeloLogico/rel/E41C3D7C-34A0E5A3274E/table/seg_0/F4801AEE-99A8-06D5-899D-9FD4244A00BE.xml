@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F4801AEE-99A8-06D5-899D-9FD4244A00BE" name="Estado_Venta">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:24:01 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Estado" id="39BA325B-9DDE-D997-B3CB-F1E28BE48C04">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:24:57 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_Estado" id="B5A11642-C647-8C72-F28B-4E9566F82A65">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:24:57 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A1DBE06F-9BD6-9448-9DE1-D7DFE617D24C" name="Estado_Venta_PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:24:57 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39BA325B-9DDE-D997-B3CB-F1E28BE48C04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD6EC8D9-190E-6996-E2FA-092C0175307F" name="Estado_Venta_Tipo_Estado_UN">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:24:57 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5A11642-C647-8C72-F28B-4E9566F82A65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

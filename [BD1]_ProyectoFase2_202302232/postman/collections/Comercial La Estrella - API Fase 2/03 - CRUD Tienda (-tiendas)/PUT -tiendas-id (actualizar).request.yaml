@@ -1,0 +1,21 @@
+$kind: http-request
+name: PUT /tiendas/:id (actualizar)
+url: http://localhost:3000/api/tiendas/{{nuevoId}}
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Nombre": "Tienda editada {{$timestamp}}",
+      "Direccion": "7a avenida 5-10 zona 4",
+      "Telefono": "22224444",
+      "Municipio_Id_Municipio": 1,
+      "Tipo_Tienda_Id_Tipo_Tienda": 1
+    }
+scripts:
+  - type: afterResponse
+    code: pm.test('HTTP 200', () => pm.response.to.have.status(200));
+    language: text/javascript
+order: 4000

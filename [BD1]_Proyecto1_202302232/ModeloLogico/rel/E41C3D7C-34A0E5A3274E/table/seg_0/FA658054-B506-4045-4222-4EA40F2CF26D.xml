@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA658054-B506-4045-4222-4EA40F2CF26D" name="Departamento">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 01:37:43 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Depertamento" id="0BE1506E-52C5-511B-4905-A7960D07C466">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 01:52:17 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="782DCE61-8C00-35DE-7B43-5D3FA09AF447">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 01:52:17 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Codigo_Pais" id="A7310B52-980F-2D6C-8C08-4663DBD518A6">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 01:52:17 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pais_Codigo_Pais" id="7F5A5F3D-CA2E-1271-B513-5F980D78F9F8">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:59:33 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pais_Codigo_Pais1" id="6A8354AF-BF7E-0033-F22E-0D60B6CBE2C9">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:51:48 UTC</createdTime>
+<generatorID>29584DA7-EA85-1F90-433C-D31219A603CF</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9095759C-A4D2-BC3F-3516-492F060C6BAF" referredColumn="6994F7AB-9619-F762-0707-1C0E0CC0DBEB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="58351D14-F5D7-E390-24FE-91EA2944FAE6" name="Departamento_PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 01:52:17 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BE1506E-52C5-511B-4905-A7960D07C466"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB0D9545-978F-1384-0504-AE0E1EDC975E" name="Departamento_Nombre_UN">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 01:52:17 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="782DCE61-8C00-35DE-7B43-5D3FA09AF447"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="985A1196-8417-480D-AEA9-FAA259C95A47" name="Departamento_Pais_FK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:51:48 UTC</createdTime>
+<generatorID>823F9423-AEB0-3D77-E943-ED650E32D25F</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A8354AF-BF7E-0033-F22E-0D60B6CBE2C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

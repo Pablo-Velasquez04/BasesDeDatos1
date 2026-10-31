@@ -1,0 +1,17 @@
+$kind: http-request
+name: PUT /marcas/:id (actualizar)
+url: http://localhost:3000/api/marcas/{{nuevoId}}
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Nombre": "Marca editada {{$timestamp}}"
+    }
+scripts:
+  - type: afterResponse
+    code: pm.test('HTTP 200', () => pm.response.to.have.status(200));
+    language: text/javascript
+order: 4000

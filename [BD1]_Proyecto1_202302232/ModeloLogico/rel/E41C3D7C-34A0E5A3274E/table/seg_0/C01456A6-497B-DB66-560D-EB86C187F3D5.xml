@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C01456A6-497B-DB66-560D-EB86C187F3D5" name="Marca_Producto">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:08:45 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Codigo_Marca" id="616C7D3D-128A-BC46-1E86-2B2103BB0818">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:09:38 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="1F52E1CD-AE9D-ED54-E83F-081AFF0FD49E">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:09:38 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4265AE30-78EF-D1DC-A48A-568F78E820FA" name="Marca_Producto_PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:09:38 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="616C7D3D-128A-BC46-1E86-2B2103BB0818"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CEEA6908-76DE-792A-FCB0-FCD5185CEDDE" name="Marca_Producto_Nombre_UN">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 04:09:38 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F52E1CD-AE9D-ED54-E83F-081AFF0FD49E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

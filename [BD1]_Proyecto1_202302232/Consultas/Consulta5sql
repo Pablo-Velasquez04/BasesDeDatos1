@@ -1,0 +1,30 @@
+SELECT
+    c.nombres || ' ' || c.apellidos AS cliente,         -- Une el nombre y apellido del comprador en una sola columna.
+    m.nombre AS municipio_residencia,                   -- Muestra el nombre del municipio donde vive el cliente.
+    COUNT(DISTINCT v.numero_venta) AS ventas_pagadas,   -- Cuenta las facturas únicas que el cliente ha pagado.
+    SUM(dv.subtotal) AS monto_total_comprado            -- Suma los subtotales para obtener el dinero total invertido.
+
+FROM
+    venta v                                             -- Tabla principal que registra las transacciones de venta.
+INNER JOIN detalle_venta dv
+    ON v.numero_venta = dv.venta_numero_venta           -- Conecta cada venta con sus líneas de productos comprados.
+
+INNER JOIN cliente c
+    ON v.cliente_codigo_cliente = c.codigo_cliente      -- Conecta la venta con el perfil del cliente que compró.
+
+INNER JOIN municipio m
+    ON c.id_municipio = m.id_municipio                  -- Conecta al cliente con su municipio de residencia.
+
+INNER JOIN estado_venta ev
+    ON v.estado_venta_id_estado = ev.id_estado          -- Conecta la venta con su estado de validez actual.
+
+WHERE
+    UPPER(ev.tipo_estado) <> 'ANULADA'                  -- Excluye de los totales las compras que fueron canceladas.
+
+GROUP BY
+    c.nombres,                                          -- Agrupa los cálculos por el nombre del cliente.
+    c.apellidos,                                        -- Agrupa los cálculos por el apellido del cliente.
+    m.nombre                                            -- Agrupa los cálculos por el municipio de residencia.
+
+ORDER BY
+    monto_total_comprado DESC;                          -- Ordena la lista de mayor a menor según el dinero total comprado.

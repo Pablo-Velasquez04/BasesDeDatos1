@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="49E7370D-3A48-22EB-F625-662339F6EAAE" name="Municipio">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 01:52:28 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Municipio" id="31327A0F-096E-F84C-1DC6-D2EBD1D05295">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 02:56:29 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="E368E97B-C5CB-ECD9-E259-B9823C8985FA">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 02:56:29 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_Departamento" id="62CF7784-8B26-8FBD-8823-59E443028ACF">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 02:56:29 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Departamento_Id_Depertamento" id="283103A9-8ABF-909B-F1D0-B62DEF10A6F7">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:00:33 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Departamento_Id_Depertamento1" id="FA3873A1-C990-19FC-2B39-F72CBF14AF94">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:51:48 UTC</createdTime>
+<generatorID>A81B518E-E147-F2C8-511E-CED47E31FACB</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D6F49E8-8D42-4112-5213-B68E06F79F55" referredColumn="0BE1506E-52C5-511B-4905-A7960D07C466"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="482E64C2-A1C9-08B2-5FBC-0482ED3A2178" name="Municipio_PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 02:56:29 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31327A0F-096E-F84C-1DC6-D2EBD1D05295"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6FADFC0D-A388-4FDA-91CE-8D9FFF86E666" name="Municipio_Nombre_UN">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 02:56:29 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E368E97B-C5CB-ECD9-E259-B9823C8985FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFC6CC34-2B04-BB5B-0F5A-F0859AAE4AD5" name="Municipio_Departamento_FK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 05:51:48 UTC</createdTime>
+<generatorID>5CB87CD1-1CD1-2EC6-FFF0-0D204FDEDE5F</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA3873A1-C990-19FC-2B39-F72CBF14AF94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,24 @@
+SELECT
+    tt.nombre_tipo AS tipo_tienda,                    -- Muestra el nombre del tipo de tienda.
+    
+    COUNT(DISTINCT t.id_tienda) AS cantidad_tiendas,   -- Cuenta las tiendas únicas de cada tipo.
+    COUNT(DISTINCT v.numero_venta) AS cantidad_ventas, -- Cuenta las facturas o transacciones únicas.
+    SUM(dv.subtotal) AS monto_facturado                -- Suma los subtotales para el dinero total ingresado.
+    
+FROM
+    tienda t                                           -- Tabla base de los establecimientos.
+    
+INNER JOIN venta v
+    ON t.id_tienda = v.tienda_id_tienda                -- Conecta las tiendas con sus ventas.
+INNER JOIN tipo_tienda tt
+    ON t.tipo_tienda_id_tipo_tienda = tt.id_tipo_tienda -- Conecta las tiendas con su tipo o categoría.
+INNER JOIN detalle_venta dv
+    ON v.numero_venta = dv.venta_numero_venta          -- Conecta las ventas con los artículos comprados.
+INNER JOIN estado_venta ev
+    ON v.estado_venta_id_estado = ev.id_estado         -- Conecta las ventas con su estado actual.
+    
+GROUP BY
+    tt.nombre_tipo                                     -- Agrupa los cálculos por tipo de tienda.
+    
+ORDER BY
+    monto_facturado DESC;                              -- Ordena los resultados de mayor a menor monto.

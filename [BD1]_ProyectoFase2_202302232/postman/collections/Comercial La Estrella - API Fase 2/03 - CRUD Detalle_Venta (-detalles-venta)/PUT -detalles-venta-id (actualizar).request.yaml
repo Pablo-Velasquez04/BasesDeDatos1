@@ -1,0 +1,21 @@
+$kind: http-request
+name: PUT /detalles-venta/:id (actualizar)
+url: http://localhost:3000/api/detalles-venta/{{nuevoId}}
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Cantidad": 1,
+      "Precio_Unitario": 12,
+      "Subtotal": 12,
+      "Venta_Numero_Venta": {{ventaId}},
+      "Producto_Codigo_Producto": 2
+    }
+scripts:
+  - type: afterResponse
+    code: pm.test('HTTP 200', () => pm.response.to.have.status(200));
+    language: text/javascript
+order: 4000

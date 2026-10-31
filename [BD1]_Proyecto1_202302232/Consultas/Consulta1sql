@@ -1,0 +1,54 @@
+-- CONSULTA 1: Ventas por tienda y ubicación
+
+-- 1. SECCIÓN SELECT: Define cuáles columnas mostrar en la tabla de resultados final.
+SELECT 
+    t.nombre AS tienda,                  -- Muestra el nombre de la tienda física. Usa "AS" para renombrar la columna limpia.
+    m.nombre AS municipio,               -- Muestra el nombre del municipio donde está la tienda física.
+    d.nombre AS departamento,            -- Muestra el nombre del departamento político de esa ubicación.
+    p.nombre AS pais,                    -- Muestra el país al que pertenece la tienda física.
+    
+    -- COUNT(DISTINCT ...): Cuenta los números de factura únicos para esa tienda geográfica.
+    -- El "DISTINCT" evita que una factura con 5 artículos se cuente 5 veces; solo la contará como 1 venta.
+    COUNT(DISTINCT v.numero_venta) AS cantidad_ventas,
+    
+    -- SUM(...): Agarra los importes parciales de la tabla de detalles y los suma todos.
+    -- Esto asegura los ingresos reales facturados por la tienda.
+    SUM(dv.subtotal) AS total_facturado
+
+-- 2. SECCIÓN FROM: Declara la tabla principal de donde partimos (la transacción base).
+FROM 
+    venta v         -- "v" es el apodo corto para no escribir "venta" todo el tiempo.
+
+-- 3. SECCIÓN INNER JOIN: Realiza los puentes para unificar la base de datos esparcida.
+INNER JOIN detalle_venta dv 
+    ON v.numero_venta = dv.venta_numero_venta         -- Conecta cada factura principal con la lista de productos que contiene.
+INNER JOIN estado_venta ev 
+    ON v.estado_venta_id_estado = ev.id_estado       -- Conecta la factura con su tabla de estados (Válida, Anulada, etc.).
+INNER JOIN tienda t 
+    ON v.tienda_id_tienda = t.id_tienda               -- Conecta la venta con la tienda física donde se realizó.
+INNER JOIN municipio m 
+    ON t.municipio_id_municipio = m.id_municipio       -- Cruza la tienda con su municipio correspondiente.
+INNER JOIN departamento d 
+    ON m.departamento_id_departamento = d.id_departamento -- Cruza el municipio con su respectivo departamento político.
+INNER JOIN pais p 
+    ON d.pais_codigo_pais = p.codigo_pais             -- Cruza el departamento para saber a qué país pertenece.
+
+
+-- 4. SECCIÓN WHERE: Aplica los filtros de exclusión antes de calcular los totales.
+WHERE 
+    -- UPPER(...): Convierte temporalmente el texto del estado a MAYÚSCULAS para comparar con seguridad.
+    -- <> 'ANULADA': El operador "<>" significa "diferente de", por ende descarta facturas invalidadas.
+    UPPER(ev.tipo_estado) <> 'ANULADA' 
+
+-- 5. SECCIÓN GROUP BY: Agrupa los registros individuales en bloques.
+GROUP BY 
+    t.nombre,                            -- Agrupa por tienda.
+    m.nombre,                            -- Agrupa por municipio.
+    d.nombre,                            -- Agrupa por departamento.
+    p.nombre                             -- Agrupa por país.
+    -- NOTA DE REGLA ORACLE: Cualquier columna del SELECT que no use una función matemática (como COUNT o SUM)
+    -- obligatoriamente tiene que listarse en esta sección para que la base de datos sepa cómo separar los grupos.
+
+-- 6. SECCIÓN ORDER BY: Ordena la información final en base a lo requerido.
+ORDER BY 
+    total_facturado DESC;                -- Ordena la tabla de mayor a menor (DESCendente) según el dinero ingresado.

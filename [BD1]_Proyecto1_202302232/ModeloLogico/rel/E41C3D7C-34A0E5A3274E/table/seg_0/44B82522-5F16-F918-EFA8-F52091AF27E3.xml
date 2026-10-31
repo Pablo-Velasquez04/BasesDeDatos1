@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44B82522-5F16-F918-EFA8-F52091AF27E3" name="Tipo_Tienda">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 02:56:38 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Tipo_Tienda" id="1AEB0D98-39E8-F829-9D69-128EB87508E7">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 02:57:58 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre_Tipo" id="CD3CBB05-6BB0-10FE-C6F3-07DCC64B4D8F">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 02:57:58 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB6FBE4A-B8E8-59AB-6A5C-ECD2BE9D3F1D" name="Tipo_Tienda_PK">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 02:57:58 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AEB0D98-39E8-F829-9D69-128EB87508E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="88F9290A-C381-4CFB-CF1A-1CA5563D3A4A" name="Tipo_Tienda_Nombre_Tipo_UN">
+<createdBy>pablo</createdBy>
+<createdTime>2026-09-18 02:57:58 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD3CBB05-6BB0-10FE-C6F3-07DCC64B4D8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

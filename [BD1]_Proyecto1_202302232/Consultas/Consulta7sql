@@ -1,0 +1,23 @@
+SELECT
+    mp.nombre_metodo AS metodo_pago,                   -- Muestra el nombre comercial del método de pago utilizado.
+    COUNT(DISTINCT dp.id_pago) AS cantidad_pagos,       -- Cuenta cuántas transacciones de pago únicas se registraron con este método.
+    SUM(dp.monto_pagado) AS monto_total_recibido        -- Suma los montos pagados para dar el total de dinero real recibido.
+
+FROM
+    detalle_pago dp                                    -- Tabla principal que registra los abonos o pagos de las ventas.
+
+INNER JOIN metodo_pago mp
+    ON dp.metodo_pago_id_metodo = mp.id_metodo         -- Conecta cada registro de pago con su respectivo nombre de método.
+INNER JOIN venta v
+    ON dp.venta_numero_venta = v.numero_venta          -- Conecta el pago con la venta correspondiente.
+INNER JOIN estado_venta ev
+    ON v.estado_venta_id_estado = ev.id_estado         -- Conecta la venta con su estado de validez actual.
+
+WHERE
+    UPPER(ev.tipo_estado) <> 'ANULADA'                 -- Excluye del dinero recibido los pagos de facturas canceladas o anuladas.
+
+GROUP BY
+    mp.nombre_metodo                                   -- Agrupa todas las sumas y conteos por cada método de pago.
+
+ORDER BY
+    monto_total_recibido DESC;                         -- Ordena los resultados de mayor a menor según el dinero recibido.

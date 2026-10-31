@@ -1,0 +1,11 @@
+$kind: http-request
+name: GET /pagos/1 (obtener por id)
+url: http://localhost:3000/api/pagos/1
+method: GET
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('HTTP 200', () => pm.response.to.have.status(200));
+      pm.test('Trae Id_Pago', () => pm.expect(pm.response.json()).to.have.property('Id_Pago'));
+    language: text/javascript
+order: 2000

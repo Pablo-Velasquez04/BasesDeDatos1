@@ -1,0 +1,11 @@
+$kind: http-request
+name: "ESCENARIO 2 - GET del producto: existencia reducida en 2"
+url: http://localhost:3000/api/productos/{{productoId}}
+method: GET
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('HTTP 200', () => pm.response.to.have.status(200));
+      pm.test('Existencia reducida en 2 unidades', () => pm.expect(pm.response.json().Existencia_Actual).to.eql(Number(pm.collectionVariables.get('stockAntes')) - 2));
+    language: text/javascript
+order: 6000

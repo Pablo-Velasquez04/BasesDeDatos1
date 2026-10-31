@@ -1,0 +1,19 @@
+$kind: http-request
+name: POST /paises (crear)
+url: http://localhost:3000/api/paises
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Nombre": "Pais {{$timestamp}}"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('HTTP 201', () => pm.response.to.have.status(201));
+      pm.collectionVariables.set('nuevoId', pm.response.json().Codigo_Pais);
+    language: text/javascript
+order: 3000

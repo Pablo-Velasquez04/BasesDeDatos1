@@ -1,0 +1,19 @@
+$kind: http-request
+name: POST /marcas (crear)
+url: http://localhost:3000/api/marcas
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Nombre": "Marca {{$timestamp}}"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('HTTP 201', () => pm.response.to.have.status(201));
+      pm.collectionVariables.set('nuevoId', pm.response.json().Codigo_Marca);
+    language: text/javascript
+order: 3000

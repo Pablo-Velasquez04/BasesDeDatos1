@@ -1,0 +1,20 @@
+$kind: http-request
+name: POST /municipios (crear)
+url: http://localhost:3000/api/municipios
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "Nombre": "Municipio {{$timestamp}}",
+      "Departamento_Id_Departamento": 1
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('HTTP 201', () => pm.response.to.have.status(201));
+      pm.collectionVariables.set('nuevoId', pm.response.json().Id_Municipio);
+    language: text/javascript
+order: 3000
